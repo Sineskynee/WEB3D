@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHKT</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Roboto+Slab:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Be Vietnam Pro"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Corinthia"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="text-navbar home">
+          <a class="text-navbar" href="index.html">Trang Chủ</a>
+        </div>
+        <div class="navbar">
+          <ul class="dir" style="list-style-type: none">
+            <li>
+              <a class="text-navbar" href="buildvr.html">Điểm nổi bật</a>
+            </li>
+            <li><a class="text-navbar" href="buildvr.html">Tạo dự án</a></li>
+            <li><a class="text-navbar" href="buildvr.html">Kho dữ liệu</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div
+          style="
+            width: 100%;
+            height: 100%;
+            background-color: rgb(157, 178, 191);
+            position: absolute;
+            opacity: 0.6;
+            z-index: 0;
+          "
+        ></div>
+        <div class="gioithieu" style="color: #fff7d4; z-index: 10">
+          <span
+            style="
+              text-align: start;
+              letter-spacing: 0.05em;
+              font-weight: 600;
+              font-size: 50px;
+              font-family: corinthia, sans-serif;
+              display: flex;
+              z-index: 10;
+            "
+            >Cẩm nang du lịch</span
+          >
+          <br />
+          <span
+            style="
+              letter-spacing: 0.025em;
+              z-index: 10;
+              font-size: 100px;
+              font-family: corinthia, sans-serif;
+            "
+            >Huyện Quỳnh Lưu</span
+          >
+          <br />
+          <span style="font-size: 20px">
+            <br /><br /><br />
+            Cẩm nang du lịch được tạo ra nhằm mục đích quảng bá
+            <br />mang các di tích lịch sử-văn hoá đến gần hơn với người dân
+            <br />
+            học sinh, giáo viên và khách du lịch
+          </span>
+        </div>
+        <div class="noibat" style="z-index: 10">
+          <p>
+            <span
+              style="
+                letter-spacing: 0.05em;
+                text-transform: capitalize;
+                font-size: 50px;
+                font-weight: 600;
+                font-family: corinthia, sans-serif;
+              "
+              >Một số khu vực</span
+            >
+          </p>
+          <div></div>
+          <div class="slider">
+            <div class="list">
+              <div class="item">
+                <a href=""></a>
+                <img src="../footage/Họ hồ.jpg" alt="Đền thờ họ Hồ" />
+              </div>
+              <div class="item">
+                <img src="../footage/4b23cf90fa552c0b75445.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../footage/961e63d1942f42711b3e65.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../footage/b1008e6fb5aa63f43abb11.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="../footage/f682574fa0b176ef2fa070.jpg" alt="" />
+              </div>
+            </div>
+            <div class="buttons">
+              <button id="prev"></button>
+              <button id="next">></button>
+            </div>
+            <ul class="dots">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <!-- <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <figure class="container1">
+                  <p class="title-swiper text-white text-shadow">
+                    Chùa Vĩnh Nghiêm
+                  </p>
+                  <img src="/images/1.1- Chua Vinh Nghiem.jpg" alt="sample89" />
+                  <figcaption>
+                    <h3>Khám phá</h3>
+                  </figcaption>
+                  <a
+                    href="https://dulichso.bacgiang.gov.vn/chuavinhnghiem/"
+                  ></a>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="container1">
+                  <p class="title-swiper text-white">Chùa Bổ Đà</p>
+                  <img src="/images/2.1. Chua Bo Da.jpg" alt="sample89" />
+                  <figcaption>
+                    <h3>Khám phá</h3>
+                  </figcaption>
+                  <a href="https://dulichso.bacgiang.gov.vn/chuaboda/"></a>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="container1">
+                  <p class="title-swiper text-white">Đền Xương Giang</p>
+                  <img src="/images/3.2. Den Xương Giang.jpg" alt="sample89" />
+                  <figcaption>
+                    <h3>Khám phá</h3>
+                  </figcaption>
+                  <a href="https://dulichso.bacgiang.gov.vn/denxuonggiang/"></a>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div> -->
+          <!-- <div class="mt-49">
+            <span class="text-primary text-bottom">Xem tất cả</span>
+            <button class="img-button" id="hide">
+              <img src="../footage/next-arrow-png-images-thumbnail-1685429288-removebg-preview.png" alt="Arrow" />
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <link rel="shortcut icon" href="/images/logo_final.png" />
+    <link href='https://fonts.googleapis.com/css?family=Be Vietnam Pro' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Corinthia"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Bắc Giang</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/base.css" rel="stylesheet" />
+    <link href="/css/app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- <div class="contain" id="load-page">
+      <div class="stage"><div class="dot-elastic"></div></div>
+      <h1>Loading...</h1>
+    </div> -->
+
+    <div id="root">
+      <section-header>
+        <header class="main-header">
+          <div class="header-main">
+            <div class="header-logo">
+              <a href="index.html" class="logo over">
+                <img src="images/logo_final.png" alt="LoGo Travel" />
+              </a>
+            </div>
+  
+            <div class="header-nav">
+              <div class="main-nav d-none d-lg-table">
+                <ul>
+                  <li>
+                    <a href="#"><span>Trang chủ</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Giới thiệu</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Bản đồ du lịch số</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>Kinh nghiệm du lịch</span></a>
+                  </li>
+                </ul>
+              </div>
+  
+              <button
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu"
+                aria-controls="offcanvasMenu"
+                class="btn-toggle-offcanvas d-inline-block d-lg-none"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+  
+        <div
+          class="main-offcanvas offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasMenu"
+          aria-labelledby="offcanvasMenuLabel"
+        >
+          <div class="header-logo">
+            <a href="index.html" class="logo over">
+              <img src="images/logo_final.png" alt="Logo Travel" />
+            </a>
+  
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasMenu"
+              aria-controls="offcanvasMenu"
+              class="btn-toggle-offcanvas"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                <path
+                  fill="currentColor"
+                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                />
+              </svg>
+            </button>
+          </div>
+  
+          <div class="offcanvas-body">
+            <div class="main-nav">
+              <ul >
+                <li>
+                  <a class="text-white" href="#"><span>Trang chủ</span></a>
+                </li>
+                <li>
+                  <a class="text-white" href="#"><span>Giới thiệu</span></a>
+                </li>
+                <li>
+                  <a class="text-white" href="#-mb"><span>Bản đồ du lịch số</span></a>
+                </li>
+                <li>
+                  <a class="text-white" href="#"><span>Kinh nghiệm du lịch</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section-header>
+  
+      <div id="p1" class="container text-center mtb-200">
+        <div class="mt-250">
+          <span class="text-primary boder-tilte mrl-150px">Điểm nổi bật</span>
+        </div>
+  
+        <div class="row">
+          <div class="col-xl-5 mt-55px mrl-35px">
+            <span class="text-primary text-adress">Cẩm nang du lịch số</span>
+            <span class="text-primary text-adress1">Bắc Giang</span>
+            <p class="text-introduce">
+              Cẩm nang du lịch số do Tỉnh đoàn Bắc Giang phối hợp với Tổng Công ty Viễn thông MobiFone tổ chức thực hiện Công trình thanh niên “Số hóa các di tích lịch sử - văn hóa trên địa bàn tỉnh” nhằm phát huy vai trò nòng cốt, đi đầu của các cấp bộ đoàn trong chuyển đổi số, quảng bá du lịch của địa phương.
+              <br />
+            </p>
+            <!-- <p class="learn-more">Learn more</p> -->
+          </div>
+          <div class="col-xl-7">
+            <div class="travle-mb mt-30">
+              <span class="text-primary1 boder-tilte1">Điểm nổi bật</span>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure class="container1">
+                    <p class="title-swiper text-white text-shadow">Chùa Vĩnh Nghiêm</p>
+                    <img src="/images/1.1- Chua Vinh Nghiem.jpg" alt="sample89" />
+                    <figcaption>
+                      <h3>Khám phá</h3>
+                    </figcaption>
+                    <a href="https://dulichso.bacgiang.gov.vn/chuavinhnghiem/"></a>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="container1">
+                    <p class="title-swiper text-white">Chùa Bổ Đà</p>
+                    <img src="/images/2.1. Chua Bo Da.jpg" alt="sample89" />
+                    <figcaption>
+                      <h3>Khám phá</h3>
+                    </figcaption>
+                    <a href="https://dulichso.bacgiang.gov.vn/chuaboda/"></a>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure class="container1">
+                    <p class="title-swiper text-white">Đền Xương Giang</p>
+                    <img src="/images/3.2. Den Xương Giang.jpg" alt="sample89" />
+                    <figcaption>
+                      <h3>Khám phá</h3>
+                    </figcaption>
+                    <a href="https://dulichso.bacgiang.gov.vn/denxuonggiang/"></a>
+                  </figure>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="mt-49">
+              <span class="text-primary text-bottom">Xem tất cả</span>
+              <button  class="img-button" id="hide">
+                <img src="images/arrow.png" alt="Arrow" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="test1 width-discover">
+        <div class="container">
+          <div class="title-discover">
+            <p>Khám phá 360</p>
+          </div>
+  
+          <div class="con-home-slider mt-20">    
+            <div class="box-slider">
+              <div class="slide-item ">
+                <div class="row">
+                  <div class="col-6 margin-auto">
+                    <figure class="container1 size-img brightness resize1">
+                      <p class="title-slider">Chùa Vĩnh Nghiêm(VIE)</p>
+                      <img src="/images/1.1- Chua Vinh Nghiem.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/chuavinhnghiem/"></a>
+                    </figure>
+                  </div> 
+                  
+                  <div class="col-6">
+                    <figure class="container1 size-img brightness resize2">
+                      <p class="title-slider">Chùa Vĩnh Nghiêm(ENG)</p>
+                      <img src="/images/1.2- Chua Vinh Nghiem.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/vinhnghiempagoda/"></a>
+                    </figure>
+                  </div>
+                </div>
+  
+                <div class="row mt-15">
+                  <div class="col-6">
+                    <figure class="container1 size-img brightness resize1">
+                      <p class="title-slider">Chùa Bồ Đà(VIE)</p>
+                      <img src="/images/2.1. Chua Bo Da.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/chuaboda/"></a>
+                    </figure>
+                  </div> 
+                  
+                  <div class="col-6">
+                    <figure class="container1 size-img brightness resize2">
+                      <p class="title-slider">Chùa Bồ Đà(ENG)</p>
+                      <img src="/images/2.2. Chua Bo Da.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/bodapagoda/"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+       
+              <div class="slide-item" >
+                <div class="row">
+                  <div class="col-6 margin-auto">
+                    <figure class="container1 size-img resize1">
+                      <p class="title-slider">Đền Xương Giang(VIE)</p>
+                      <img src="/images/3.3. Den Xuong Giang.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/denxuonggiang/"></a>
+                    </figure>
+                  </div> 
+                  
+                  <div class="col-6">
+                    <figure class="container1 size-img brightness resize2">
+                      <p class="title-slider">Đền Xương Giang(ENG)</p>
+                      <img src="/images/3.2. Den Xương Giang.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/xuonggiangtemple/"></a>
+                    </figure>
+                  </div>
+                </div>
+  
+                <div class="row mt-15">
+                  <div class="col-6">
+                    <figure class="container1 size-img brightness resize1">
+                      <p class="title-slider">Chùa Bổ Đà(VIE)</p>
+                      <img src="/images/2.1. Chua Bo Da.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/chuaboda/"></a>
+                    </figure>
+                  </div> 
+                  
+                  <div class="col-6">
+                    <figure class="container1 size-img brightness resize2">
+                      <p class="title-slider">Chùa Bổ Đà(ENG)</p>
+                      <img src="/images/2.2. Chua Bo Da.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/bodapagoda/"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="box-line">
+              <div class="controls tns-controls">
+                <button class="prev" data-controls="prev"></button>
+                <button class="next" data-controls="next"></button>
+              </div>
+        
+              <div class="tns-nav" aria-label="Carousel Pagination">
+                <button type="button" data-nav="0"></button>
+                <button type="button" data-nav="1"></button>
+              </div>
+      
+            </div>
+          </div>
+  
+  
+          <div class="con-home-slider1 mt-20">    
+            <div class="box-slider1">
+              <div class="slide-item mbt-20">
+                <div class="row">
+                  <div class="col-12 resize3">
+                    <figure class="container1">
+                      <p class="title-slider-mb">CHÙA VĨNH NGHIÊM(VIE)</p>
+                      <img src="/images/1.1- Chua Vinh Nghiem.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/chuavinhnghiem/"></a>
+                    </figure>
+                  </div> 
+                </div> 
+  
+                <div class="row mt-20">
+                  <div class="col-12 resize3">
+                    <figure class="container1">
+                      <p class="title-slider-mb">CHÙA VĨNH NGHIÊM(ENG)</p>
+                      <img src="/images/1.1- Chua Vinh Nghiem.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/vinhnghiempagoda/"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+       
+              <div class="slide-item mbt-20">
+                <div class="row">
+                  <div class="col-12 resize3">
+                    <figure class="container1">
+                      <p class="title-slider-mb">CHÙA VĨNH NGHIÊM(VIE)</p>
+                      <img src="/images/1.1- Chua Vinh Nghiem.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/chuavinhnghiem/"></a>
+                    </figure>
+                  </div> 
+                </div> 
+  
+                <div class="row mt-20">
+                  <div class="col-12 resize3">
+                    <figure class="container1">
+                      <p class="title-slider-mb">CHÙA VĨNH NGHIÊM(ENG)</p>
+                      <img src="/images/1.1- Chua Vinh Nghiem.jpg" alt="sample89" />
+                      <figcaption>
+                        <h3>Khám phá</h3>
+                      </figcaption>
+                      <a href="https://dulichso.bacgiang.gov.vn/vinhnghiempagoda/"></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="box-line">
+              <div class="controls tns-controls1">
+                <button class="prev" data-controls="prev"></button>
+                <button class="next" data-controls="next"></button>
+              </div>
+        
+              <div class="tns-nav1" aria-label="Carousel Pagination">
+                <button type="button" data-nav="0"></button>
+                <button type="button" data-nav="1"></button>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <footer class="main-footer">
+          <!-- For PC -->
+          <div class="container-fluid d-none d-md-block">
+            <div class="container footer-nav">
+              <div class="row">
+                    <div class="col-12 col-md-4 col-nav">
+
+                      <div class="flex">
+                        <div class="logo-doan">
+                          <a href="index.html" class="logo over">
+                            <img src="images/logo-doan-1388x1536 1.png" alt="LoGo Travel" />
+                          </a>
+                        </div>
+  
+                        <div class="mtf-10px">
+                          <h4 class="title-nav text-coler">THÔNG TIN LIÊN HỆ</h4>
+                          <h4 class="title-nav">TRANG THÔNG TIN ĐIỆN TỬ CẨM NANG DU LỊCH SỐ TỈNH BẮC GIANG</h5>
+                        </div>
+                      </div>
+                      <ul class="nav-list">
+                        <li class="flex">
+                          <div class="img-footer">
+                            <img src="images/Location.png" alt="Location" />
+                          </div>
+                          
+                          <a class="text-white" href="#"
+                            >Tầng 8, Nhà B, Trụ sở liên cơ quan tỉnh Bắc Giang.</a
+                          >
+                        </li>
+                        <li class="flex">
+                          <div class="img-footer">
+                            <img src="images/Message.png" alt="Message" />
+                          </div>
+                          
+                          <a class="text-white" href="#"
+                            >btnncd_td@bacgiang.gov.vn</a
+                          >
+                        </li>
+                        <li class="flex">
+                          <div class="img-footer">
+                            <img src="images/Call.png" alt="Call" />
+                          </div>
+                          
+                          <a class="text-white" href="#"
+                            >02043.851.079</a
+                          >
+                        </li>
+                        <li class="flex">
+                          <div class="img-footer1 ">
+                            <img src="images/printing.png" alt="Call" />
+                          </div>
+                          
+                          <a class="mtf-10px text-white" href="#"
+                            >02043.851.079</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+  
+                    <div class="col-12 col-md-4 col-nav">
+                      <h4 class="title-nav mtf-150px text-coler">DANH MỤC</h4>
+  
+                      <ul class="mtf-150px nav-list">
+                        <li>
+                          <a class="text-white"
+                            href="#"
+                            >Trang chủ</a
+                          >
+                        </li>
+                        <li>
+                          <a class="text-white"
+                            href="#"
+                            >Bản đồ du lịch số</a
+                          >
+                        </li>
+                        <li>
+                          <a class="text-white"
+                            href="#"
+                            >Kinh nghiệm du lịch</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+  
+                    <div class="col-12 col-md-4 col-nav">
+                      <h4 class="title-nav mtf-right-150px text-coler">ĐẶC ĐIỂM NỔI BẬT</h4>
+  
+                      <ul class="nav-list mtf-right-150px ">
+                        <li class="flex">
+                          <div class="img-footer-dd">
+                            <img src="images/1.1- Chua Vinh Nghiem.jpg" alt="Call" />
+                          </div>
+                          
+                          <a class="text-dd" href="https://dulichso.bacgiang.gov.vn/chuavinhnghiem/"
+                            >Chùa Vĩnh Nghiêm</a
+                          >
+                        </li>
+                        <li class="flex">
+                          <div class="img-footer-dd">
+                            <img src="images/3.1. Den Xuong Giang.jpg" alt="Call" />
+                          </div>
+                          
+                          <a class="text-dd" href="https://dulichso.bacgiang.gov.vn/denxuonggiang/"
+                            >Đền Xương Giang</a
+                          >
+                        </li>
+                        <li class="flex">
+                          <div class="img-footer-dd">
+                            <img src="images/2.1. Chua Bo Da.jpg" alt="Call" />
+                          </div>
+                          
+                          <a class="text-dd" href="https://dulichso.bacgiang.gov.vn/chuaboda/"
+                            >Chùa Bổ Đà</a
+                          >
+                        </li>
+                      </ul>
+                </div>
+              </div>
+  
+  
+              <div class="row footer-bt text-white-dd">
+                <p >Đơn vị đồng hành: </p>
+                <div>
+                  <div class="col-xl-12 col-nav ">
+                    <div class="flex justify-content-sm-between">
+                      <div class="flex">
+                        <div class="img-mbf-footer-dd">
+                          <img src="images/mbf 1.png" alt="MBF" />
+                        </div>
+                      
+                        <a class="text-mbf-dd text-white" href="#"
+                          >TỔNG CÔNG TY VIỄN THÔNG MOBIFONE</a
+                        >
+                      </div> 
+  
+  
+                      <div class="box-social">
+                        <ul>
+                          <li>
+                            <a href="https://www.facebook.com/olysportofficial" target="_blank" style="color: #2436b6;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M12.5024 0.00250053C5.87538 0.00250053 0.502441 5.40787 0.502441 12.0749C0.502441 18.0997 4.89008 23.0934 10.6279 24.0025V15.5654H7.57955V12.0749H10.6279V9.41512C10.6279 6.38705 12.4196 4.71726 15.1595 4.71726C16.4724 4.71726 17.8478 4.9527 17.8478 4.9527V7.92161H16.3308C14.8427 7.92161 14.377 8.85369 14.377 9.80872V12.0725H17.7026L17.1709 15.563H14.377V24.0001C20.1148 23.0958 24.5024 18.1009 24.5024 12.0749C24.5024 5.40787 19.1295 0.00250053 12.5024 0.00250053Z" fill="white"/>
+                                </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://twitter.com/oly_sport" target="_blank" style="color: #00a5fe;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M12 0.5C5.3725 0.5 0 5.8725 0 12.5C0 19.1275 5.3725 24.5 12 24.5C18.6275 24.5 24 19.1275 24 12.5C24 5.8725 18.6275 0.5 12 0.5ZM9.0625 17.4738H6.6325V9.65375H9.0625V17.4738ZM7.8325 8.69375C7.065 8.69375 6.56875 8.15 6.56875 7.4775C6.56875 6.79125 7.08 6.26375 7.86375 6.26375C8.6475 6.26375 9.1275 6.79125 9.1425 7.4775C9.1425 8.15 8.6475 8.69375 7.8325 8.69375ZM17.9375 17.4738H15.5075V13.14C15.5075 12.1313 15.155 11.4462 14.2763 11.4462C13.605 11.4462 13.2063 11.91 13.03 12.3563C12.965 12.515 12.9488 12.74 12.9488 12.9638V17.4725H10.5175V12.1475C10.5175 11.1713 10.4862 10.355 10.4537 9.6525H12.565L12.6763 10.7388H12.725C13.045 10.2288 13.8288 9.47625 15.14 9.47625C16.7388 9.47625 17.9375 10.5475 17.9375 12.85V17.4738Z" fill="white"/>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://discord.gg/K6pnhszs" target="_blank" style="color: #5865f2;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none">
+                                <path d="M26.5771 3.1748C26.4277 2.61828 26.1347 2.11076 25.7275 1.70303C25.3203 1.29531 24.8132 1.0017 24.2568 0.851563C22.209 0.300781 14 0.300781 14 0.300781C14 0.300781 5.79102 0.300781 3.74316 0.848633C3.18658 0.998278 2.67917 1.29173 2.27189 1.69953C1.86461 2.10733 1.57179 2.61511 1.42285 3.17188C0.875 5.22266 0.875 9.5 0.875 9.5C0.875 9.5 0.875 13.7773 1.42285 15.8252C1.72461 16.9561 2.61523 17.8467 3.74316 18.1484C5.79102 18.6992 14 18.6992 14 18.6992C14 18.6992 22.209 18.6992 24.2568 18.1484C25.3877 17.8467 26.2754 16.9561 26.5771 15.8252C27.125 13.7773 27.125 9.5 27.125 9.5C27.125 9.5 27.125 5.22266 26.5771 3.1748ZM11.3926 13.4258V5.57422L18.1895 9.4707L11.3926 13.4258Z" fill="white"/>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+              
+                </div>
+              </div>
+            </div>
+
+            <div class="row text-bt-page">
+                <p class="text-coler">Bản quyền thuộc Đoàn Thanh niên Cộng sản Hồ Chí Minh tỉnh Bắc Giang <span class="text-white">| Điều khoản sử dụng | Chính sách bảo mật</span></p>
+            </div>
+            </div>
+          </div>
+  
+          <!-- For Mobile -->
+          <div class="container d-block d-md-none">
+            <div class="footer-nav">
+              <div class="row">
+                <div class="col-12 col-lg-4 col-xl-5 col-navs">
+                  <div class="col-nav">            
+                    <h4 class="text-coler">THÔNG TIN LIÊN HỆ</h4>
+                    <h4 class="text-coler">TRANG THÔNG TIN ĐIỆN TỬ CẨM NANG DU LỊCH SỐ TỈNH BẮC GIANG</h4>
+  
+                    <ul class="nav-list">
+                      <li>
+                        <a class="lh-30px" href="#"
+                          >
+                          Địa chỉ: Tầng 8, Nhà B, Trụ sở liên cơ quan tỉnh Bắc Giang.</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >
+                          Email: btnncd_td@bacgiang.gov.vn</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Liên hệ: 02403851079</a>
+                      </li>
+                      <li>
+                        <a href="#">Số Fax: 02403851079</a>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div class="col-nav">
+                    <h4 class="text-coler">Danh mục</h4>
+  
+                    <ul class="nav-list">
+                      <li>
+                        <a href="#"
+                          >
+                          Trang chủ</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >
+                          Thông tin tour</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Kinh nghiệm du lịch</a>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div class="col-nav">
+                    <h4 class="text-coler">Đặc điểm nổi bật</h4>
+  
+                    <ul class="nav-list">
+                      <li>
+                        <a href="#"
+                          >
+                          Chùa Vĩnh Nghiêm</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >
+                          Đền Xương Giang</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Bổ Đà</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
+  
+    </div>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 50,
+          depth: 100,
+          modifier: 2,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
+    $(".mySwiper").hover(function() {
+      (this).swiper.autoplay.stop();
+    }, function() {
+      (this).swiper.autoplay.start();
+    });
+
+    $(document).ready(function () {
+    $(".test1").hide();
+      $(".img-button").click(function () {
+        $(".mySwiper").each(function() {
+          (this).swiper.autoplay.stop();
+        })
+        $("#p1").slideUp("slow");
+        $(".test1").show();
+        $("header").css("background", "transparent")
+        $("header").css("background-color", "white")
+        $(".main-header .main-nav ul li a").css("color", "black") 
+        
+    });
+  });
+    </script>
+  </body>
+
+  <script defer src="/js/bootstrap.js"></script>
+  <script defer src="/js/base.js"></script>
+  <script defer src="/js/app.js"></script>
+</html>
