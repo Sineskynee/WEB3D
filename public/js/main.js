@@ -16,7 +16,7 @@ prev.onclick = function () {
 };
 let refreshInterval = setInterval(() => {
   next.click();
-}, 3000);
+}, 7000);
 function reloadSlider() {
   slider.style.left = -items[active].offsetLeft + "px";
   //
@@ -27,7 +27,7 @@ function reloadSlider() {
   clearInterval(refreshInterval);
   refreshInterval = setInterval(() => {
     next.click();
-  }, 3000);
+  }, 7000);
 }
 
 dots.forEach((li, key) => {
@@ -39,3 +39,23 @@ dots.forEach((li, key) => {
 window.onresize = function (event) {
   reloadSlider();
 };
+let isHovered = false;
+
+slider.addEventListener("mouseover", function () {
+  isHovered = true;
+  clearInterval(refreshInterval);
+});
+
+slider.addEventListener("mouseout", function () {
+  isHovered = false;
+  refreshInterval = setInterval(() => {
+    next.click();
+  }, 7000);
+});
+let overlayButtons = document.querySelectorAll(".btn-hover");
+
+overlayButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    window.location.href = "home.html";
+  });
+});
